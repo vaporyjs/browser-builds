@@ -1,34 +1,37 @@
 {
-  "private": true,
-  "name": "browser-builds",
+  "name": "@vaporyjs/browser-builds",
+  "namespace": "vaporyjs",
   "version": "0.0.0",
-  "description": "Browser builds of ethereumjs libraries.",
+  "description": "Browser builds of vaporyjs libraries.",
   "scripts": {
     "build": "node build.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ethereumjs/browser-builds.git"
+    "url": "git+https://github.com/vaporyjs/browser-builds.git"
   },
   "keywords": [
-    "ethereum",
+    "vapory",
     "browser"
   ],
   "author": "Alex Beregszaszi <alex@rtfs.hu>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ethereumjs/browser-builds/issues"
+    "url": "https://github.com/vaporyjs/browser-builds/issues"
   },
-  "homepage": "https://github.com/ethereumjs/browser-builds#readme",
+  "homepage": "https://github.com/vaporyjs/browser-builds#readme",
   "dependencies": {
-    "ethereumjs-abi": "^0.6.2",
-    "ethereumjs-icap": "^0.3.1",
-    "ethereumjs-tx": "^1.3.1",
-    "ethereumjs-units": "^0.2.0",
-    "ethereumjs-vm": "^2.3.0",
-    "ethereumjs-wallet": "^0.6.0"
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "vaporyjs-abi": "^0.6.6",
+    "vaporyjs-icap": "^0.3.1",
+    "vaporyjs-tx": "^1.3.3",
+    "vaporyjs-units": "^0.2.0",
+    "vaporyjs-vm": "^2.3.5",
+    "vaporyjs-wallet": "^0.6.0"
   },
   "devDependencies": {
+    "babel-minify": "^0.5.1",
     "babel-preset-react": "^6.24.1",
     "babelify": "^7.3.0",
     "browserify": "^14.4.0",

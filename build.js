@@ -5,22 +5,22 @@ const srcDir = 'src/'
 const buildDir = 'dist/'
 const babelPresets = ["env", "react"]
 
-const standaloneName = 'ethereumjs'
+const standaloneName = 'vaporyjs'
 const packages = [
-  'ethereumjs-all',
-  'ethereumjs-vm',
-  'ethereumjs-tx',
-  'ethereumjs-icap',
-  'ethereumjs-wallet',
-  'ethereumjs-wallet-hd',
-  'ethereumjs-wallet-thirdparty',
-  'ethereumjs-abi'
+  'vaporyjs-all',
+  'vaporyjs-vm',
+  'vaporyjs-tx',
+  'vaporyjs-icap',
+  'vaporyjs-wallet',
+  'vaporyjs-wallet-hd',
+  'vaporyjs-wallet-thirdparty',
+  'vaporyjs-abi'
 ]
 
 packages.forEach(function(name) {
   var baseName = name.replace('-hd', '').replace('-thirdparty', '')
   var version
-  if (name === 'ethereumjs-all') {
+  if (name === 'vaporyjs-all') {
     var date = new Date()
     var day  = date.getDate()
     day = (day < 10 ? "0" : "") + day
